@@ -1,0 +1,28 @@
+.notification {
+    background-color: #0a0a0a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 7.5px;
+    gap: 10px;
+
+    a {
+      font-family: "DM Sans";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 17px;
+      /* identical to box height */
+      letter-spacing: 0em;
+      text-align: center;
+      text-transform: uppercase;
+      text-decoration: none;
+
+      color: #ffffff;
+
+      // padding: 7.5px;
+
+      /* Preserve whitespace within the <a> element's text. */
+      white-space: pre-wrap;
+    }
+  }

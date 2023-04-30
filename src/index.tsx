@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import './fonts/DM Sans/DMSans-Medium.ttf';
+import './fonts/DM Sans/DMSans-Regular.ttf';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -17,3 +19,10 @@ root.render(
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
+
+interface CategoriesGridItemProps {
+  imageSrc: string;
+  linkTitle: string;
+  isWide: boolean;
+  isAlignedToBottom: boolean;
+}

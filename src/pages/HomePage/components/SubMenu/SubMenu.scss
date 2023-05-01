@@ -1,0 +1,52 @@
+.sub-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 14px 40px;
+    gap: 80px;
+
+    /* Light-Grey */
+    background-color: #f6f6f6;
+
+    overflow-x: auto;
+    white-space: nowrap;
+
+    @media (max-width: 1180px) {
+      gap: 60px;
+    }
+
+    @media (max-width: 1080px) {
+      justify-content: flex-start;
+    }
+
+    @media (max-width: 768px) {
+      padding: 7px 20px;
+    }
+
+    .frame {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: center;
+      padding: 0px;
+      gap: 17px;
+    }
+
+    a {
+      font-family: "DM Sans";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 17px;
+      /* identical to box height */
+      text-align: center;
+      text-decoration: none;
+
+      background: linear-gradient(0deg, #888888, #888888),
+        linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+  }

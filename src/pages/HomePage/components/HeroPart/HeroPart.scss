@@ -1,0 +1,169 @@
+.hero {
+    background: url("./assets/hero-img.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    height: 520px;
+
+    @media (max-width: 1080px) {
+      background: url("./assets/hero-img-mobile.svg"),
+        url("./assets/hero-mobile-black-part.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .box {
+      padding-left: 155px;
+      padding-top: 118px;
+      @media (max-width: 820px) {
+        top: 100%;
+        padding-left: 16px;
+      }
+
+      p {
+        font-family: "DM Sans";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 20px;
+        /* identical to box height */
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        text-transform: uppercase;
+        margin: 0;
+
+        color: #ffffff;
+        background: #009aff;
+        width: 81px;
+        height: 28px;
+      }
+
+      h1 {
+        font-family: "DM Sans";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 52px;
+        /* identical to box height */
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.2em;
+        margin: 0;
+
+        color: #ffffff;
+      }
+
+      a {
+        font-family: "DM Sans";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 21px;
+        /* identical to box height */
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+
+        color: #009aff;
+      }
+
+      h3 {
+        font-family: "DM Sans";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 31px;
+        margin: 0;
+        padding-top: 40px;
+        padding-bottom: 24px;
+
+        color: #ffffff;
+        @media (max-width: 568px) {
+          padding-top: 16px;
+          padding-bottom: 16px;
+        }
+      }
+
+      button {
+        font-family: "DM Sans";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 21px;
+        /* identical to box height */
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        letter-spacing: 0.1em;
+        padding: 16px;
+        text-transform: uppercase;
+
+        /* White */
+        background: #ffffff;
+        border-radius: 4px;
+        cursor: pointer;
+
+        @media (max-width: 568px) {
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 21px;
+          /* identical to box height */
+          letter-spacing: 0.04em;
+          text-transform: none;
+        }
+
+        span {
+          display: inline-block;
+          margin-left: 120.17px;
+          font-size: 1.2rem;
+          transition: margin-left 0.2s ease-in-out;
+        }
+        @media screen and (max-width: 768px) {
+          span {
+            margin-left: 13.79px;
+          }
+        }
+      }
+
+      .lines {
+        padding-top: 67px;
+        align-items: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 8px;
+        width: 223px;
+        height: 20px;
+        @media (max-width: 568px) {
+          padding-top: 24px;
+        }
+        .line1 {
+          background: #f6f6f620;
+
+          width: 69px;
+          height: 4px;
+          .line1-blue {
+            background: #009aff;
+
+            width: 47px;
+            height: 4px;
+          }
+        }
+
+        .line2 {
+          background: #f6f6f620;
+
+          width: 69px;
+          height: 4px;
+        }
+
+        .line3 {
+          background: #f6f6f620;
+
+          width: 69px;
+          height: 4px;
+        }
+      }
+    }
+  }

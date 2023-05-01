@@ -41,5 +41,3 @@ export const SubMenu = () => {
     </div>
   );
 };
-
-export default SubMenu;

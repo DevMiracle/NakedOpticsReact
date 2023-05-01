@@ -15,6 +15,10 @@ export const Header = () => {
     setIsMenuOpen(!isMenuOpen);
   }
 
+  const handleLinkClick = () => {
+    setIsMenuOpen(false);
+  }
+
   return (
     <div className="menu">
       <div id="burger-menu" onClick={handleBurgerClick}>
@@ -22,17 +26,17 @@ export const Header = () => {
       </div>
       <div id="burger-menu-list" className={isMenuOpen ? 'overlay' : ''}>
         <ul>
-          <li><a href="#">optics</a></li>
-          <li><a href="#">clothing</a></li>
-          <li><a className="outlet-color" href="#">outlet</a></li>
-          <li><a href="#">naked heroes</a></li>
-          <li><a href="#">stories</a></li>
-          <li><Link to="login">profile</Link></li>
+          <li><a href="#" onClick={handleLinkClick}>optics</a></li>
+          <li><a href="#" onClick={handleLinkClick}>clothing</a></li>
+          <li><a className="outlet-color" href="#" onClick={handleLinkClick}>outlet</a></li>
+          <li><a href="#" onClick={handleLinkClick}>naked heroes</a></li>
+          <li><a href="#" onClick={handleLinkClick}>stories</a></li>
+          <li><Link to="login" onClick={handleLinkClick}>profile</Link></li>
         </ul>
       </div>
       <div className="logo">
-        <Link to={"/"}> <img src= {mainLogo} alt="" className="full-logo" /></Link>
-        <img src={mobileLogo} alt="" className="mobile-logo" />
+        <Link to={"/"}> <img src= {mainLogo} alt="" className="full-logo" /> </Link>
+        <Link to={"/"}> <img src={mobileLogo} alt="" className="mobile-logo" /> </Link>
       </div>
       <nav>
         <a href="#">optics</a>

@@ -1,8 +1,8 @@
 import './Footer.scss'
-import instagramIcon from './FooterAssets/InstagramIcon.svg'
-import youtubeIcon from'./FooterAssets/YoutubeIcon.svg'
-import facebookIcon from'./FooterAssets/FacebookIcon.svg'
-import secureShoppingIcon from'./FooterAssets/SecureShoppingIcon.svg'
+import instagramIcon from './assets/InstagramIcon.svg'
+import youtubeIcon from'./assets/YoutubeIcon.svg'
+import facebookIcon from'./assets/FacebookIcon.svg'
+import secureShoppingIcon from'./assets/SecureShoppingIcon.svg'
 
 const Footer = () => {
     return (
@@ -73,7 +73,7 @@ const Footer = () => {
         </div>
       </div>
     </footer>
-    )
+    );
 }
 
 export default Footer

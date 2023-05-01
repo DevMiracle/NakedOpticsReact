@@ -6,7 +6,7 @@ const TopNotification = () => {
             {/* The &lt; and &gt; entities are used to display < and > symbols */}
         <a href="#"> &lt;     Free shipping over 100€ order     &gt;</a>
       </div>
-    )
+    );
 }
 
 export default TopNotification

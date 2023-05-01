@@ -3,6 +3,12 @@ import instagramIcon from './assets/InstagramIcon.svg'
 import youtubeIcon from'./assets/YoutubeIcon.svg'
 import facebookIcon from'./assets/FacebookIcon.svg'
 import secureShoppingIcon from'./assets/SecureShoppingIcon.svg'
+import visa from './assets/Visa.svg'
+import masterCard from './assets/Mastercard.svg'
+import dinnerClub from './assets/DinnerClub.svg'
+import maestro from './assets/Maestro.svg'
+import stripe from './assets/Stripe.svg'
+
 
 const Footer = () => {
     return (
@@ -49,19 +55,19 @@ const Footer = () => {
           <h3>Our Payment Methods</h3>
           <div className="payment-methods">
             <div className="visa">
-              <img src="Payment-Vectors/Visa.svg" alt="Visa" />
+              <img src={visa} alt="Visa" />
             </div>
             <div className="mastercard">
-              <img src="Payment-Vectors/Mastercard.svg" alt="Mastercard" />
+              <img src={masterCard} alt="Mastercard" />
             </div>
             <div className="mastercard-red">
-              <img src="Payment-Vectors/Maestro.svg" alt="Mastercard Red" />
+              <img src={maestro} alt="Mastercard Red" />
             </div>
             <div className="diners-club">
-              <img src="Payment-Vectors/Diners Club.svg" alt="Diners Club" />
+              <img src={dinnerClub} alt="Diners Club" />
             </div>
             <div className="stripe">
-              <img src="Payment-Vectors/Stripe.svg" alt="Stripe" />
+              <img src={stripe} alt="Stripe" />
             </div>
           </div>
         </div>

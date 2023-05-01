@@ -1,0 +1,37 @@
+.featured-container {
+    background-color: white;
+    margin: 80px;
+    h1 {
+      font-family: "DM Sans";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 100%;
+      /* identical to box height, or 24px */
+      text-align: center;
+      letter-spacing: 0.5em;
+      text-transform: uppercase;
+
+      color: #000000;
+
+      margin: 0;
+      //   padding-top: 83px;
+      padding-bottom: 21px;
+    }
+
+    .featured-items {
+      display: flex;
+      flex-wrap: wrap;
+      align-content: flex-start;
+      justify-content: space-between;
+
+      img[alt="FreeRide-logo"] {
+        width: 178.67px;
+        height: 140px;
+      }
+      img[alt="Skiing-logo"] {
+        width: 178.67px;
+        height: 140px;
+      }
+    }
+  }

@@ -5,6 +5,7 @@ import { useState } from 'react'
 
 export const LoginPage = () => {
   const [loginStatus, setLoginStatus] = useState('');
+  const [showPassword, setShowPassword] = useState(false);
 
   const checkPassword = (event: React.MouseEvent<HTMLButtonElement>) => {
     event.preventDefault();
@@ -26,6 +27,10 @@ export const LoginPage = () => {
     }
   };
 
+  const togglePasswordVisibility = () => {
+    setShowPassword(!showPassword);
+  };
+
   return (
     <div className="form-container">
       <form>
@@ -37,23 +42,39 @@ export const LoginPage = () => {
         <div className="input-box">
           <span>Password</span>
           <a href="#">Forgot your password?</a>
-          <input type="password" id="psw" required />
-          <button type="button" id="togglePassword">
-            <img src={vectorShow} id="eye-icon" />
+          <input
+            type={showPassword ? 'text' : 'password'}
+            id="psw"
+            required
+          />
+          <button
+            type="button"
+            id="togglePassword"
+            onClick={togglePasswordVisibility}
+          >
+            <img src={showPassword ? vectorHide : vectorShow} id="eye-icon" />
           </button>
-          <div id="error" style={{ color: "red", display: loginStatus === 'error' ? 'block' : 'none' }}>Incorrect password or email</div>
+          <div
+            id="error"
+            style={{ color: 'red', display: loginStatus === 'error' ? 'block' : 'none' }}
+          >
+            Incorrect password or email
+          </div>
         </div>
         <div className="submit">
           <button onClick={checkPassword}>Login</button>
         </div>
         <div className="links">
-          <a className="first-link" href="#">You don’t have an account yet?</a>
-          <a className="second-link" href="#">Register<span>&gt;</span></a>
+          <a className="first-link" href="#">
+            You don’t have an account yet?
+          </a>
+          <a className="second-link" href="#">
+            Register<span>&gt;</span>
+          </a>
         </div>
       </form>
     </div>
   );
-}
+};
 
-
-export default LoginPage
+export default LoginPage;

@@ -5,6 +5,8 @@ import { HeroPart } from './components/HeroPart/HeroPart';
 import { SubMenu } from './components/SubMenu/SubMenu'
 import { CardPart } from './components/CardPart/CardPart';
 import { DoubleProductHero } from './components/DoubleProductHero/DoubleProductHero';
+import { StoriesPart } from './components/StoriesPart/StoriesPart';
+import { SolutionPart } from './components/SolutionPart/SolutionPart';
 
 export const HomePage = () => {
     return (
@@ -13,6 +15,8 @@ export const HomePage = () => {
         <HeroPart />
         <CardPart />
         <DoubleProductHero />
+        <StoriesPart />
+        <SolutionPart />
         </>
     );
 }

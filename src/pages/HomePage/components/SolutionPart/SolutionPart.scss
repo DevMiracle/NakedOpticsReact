@@ -1,0 +1,37 @@
+.solution-for-everyone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url("./assets/SolutionPartBkgd.svg");
+    background-repeat: no-repeat;
+    height: 601px;
+    position: relative;
+    .background-gradient {
+      background: linear-gradient(
+        180deg,
+        #f7f7f7 0%,
+        #abcdd6 80.21%,
+        rgba(171, 205, 214, 0.03) 100%
+      );
+      position: absolute;
+      width: 100%;
+      height: 536px;
+      top: -63.5%;
+      z-index: 2;
+    }
+
+    h1 {
+      font-family: "DM Sans";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 60px;
+      line-height: 100%;
+      /* identical to box height, or 60px */
+      text-align: center;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+
+      /* White */
+      color: #ffffff;
+    }
+  }

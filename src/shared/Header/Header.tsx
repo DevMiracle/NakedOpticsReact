@@ -6,6 +6,7 @@ import profileIcon from './assets/Profile-Vector.svg'
 import cartIcon from './assets/Cart-Vector.svg'
 import burgerIcon from './assets/Burger.svg'
 import { useState } from 'react';
+import { Link } from 'react-router-dom'
 
 export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -26,11 +27,11 @@ export const Header = () => {
           <li><a className="outlet-color" href="#">outlet</a></li>
           <li><a href="#">naked heroes</a></li>
           <li><a href="#">stories</a></li>
-          <li><a href="#">profile</a></li>
+          <li><Link to="login">profile</Link></li>
         </ul>
       </div>
       <div className="logo">
-        <img src= {mainLogo} alt="" className="full-logo" />
+        <Link to={"/"}> <img src= {mainLogo} alt="" className="full-logo" /></Link>
         <img src={mobileLogo} alt="" className="mobile-logo" />
       </div>
       <nav>
@@ -42,7 +43,7 @@ export const Header = () => {
       </nav>
       <div className="shopping">
         <a href="#"><img src= {searchIcon} alt="" /></a>
-        <a href="#" className="profile"><img src={profileIcon} alt="" /></a>
+        <Link to="/login" className="profile"><img src={profileIcon} alt="" /></Link>
         <div className="cart">
           <a href="#"><img src={cartIcon} alt="Cart icon" /></a>
           <span className="cart-count">4</span>
